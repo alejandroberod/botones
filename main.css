@@ -1,0 +1,196 @@
+.btn {
+    padding: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+.btn-1 {
+    background-color: #673ab7;
+    transition: border-radius 0.7s, background-color 0.7s, transform 0.7s;
+}
+.btn-1:hover{
+    border-radius: 15px;
+    background-color: #b39ddb;
+    transform: translate(-10px,5px);
+}
+
+.btn-2 {
+    background-color: #1e88e5;
+    transition: transform 2s, background-color 1s;
+}
+.btn-2:hover {
+    background-color: #90caf9;
+    transform: rotate(180deg);
+}
+.btn-3 {
+    background-color: #18ffff;
+    transition: transform 1s, background-color 1s;
+}
+.btn-3:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.btn-4 {
+    background-color: #4caf50;
+    transition: transform 1s, background-color 1s;
+}
+.btn-4:hover {
+    background-color: #a5d6a7;
+    transform: rotateX(180deg);
+}
+
+.btn-5 {
+    background-color: #ff8a65;
+    transition: background-color 1s;
+}
+.btn-5:hover {
+    animation: cambio-de-color 0.8s;
+}
+
+.btn-6 {
+    background-color: #8d6e63;
+    transition: background-color 1s;
+}
+.btn-6:hover {
+    animation: saltar 0.5s ease-in-out;
+}
+
+.btn-7 {
+    background-color: #424242;
+    transition: transform 1s, background-color 1s;
+
+}
+.btn-7:hover {
+    transform: translate(10px,-15px) rotate(30deg);
+}
+
+.btn-8 {
+    background-color: #607d8b;
+    transition: background-color 1s;
+}
+.btn-8:hover {
+    animation: elastic 1s;
+}
+
+.btn-9 {
+    background-color: #ffd180;
+    transition: transform 1s, background-color 1s;
+}
+.btn-9:hover {
+    transform: translateX(100px);
+}
+
+.btn-10 {
+    background-color: #b2ff59;
+    transition: background-color 1s;
+}
+.btn-10:hover {
+    animation: zoom 1s;
+}
+
+.btn-11 {
+    background-color: #a7ffeb;
+    transition: transform 0.5s, background-color 1s;
+}
+.btn-11:hover {
+    transform: scaleX(1.2) scaleY(0.8);
+}
+
+.btn-12 {
+    background-color: #ea80fc;
+    transition: transform 0.5s, width 0.1s, border-radius 0.1s, background-color 1s;
+}
+.btn-12:hover {
+    animation: roll 2s linear infinite;
+    height: 80px;
+    border-radius: 50%;
+    transform: scale(1.3);
+    
+}
+
+.btn-13 {
+    background-color: #e6ee9c;
+    transition: background-color 1s;
+}
+.btn-13:hover {
+    animation: vibrate 1s;
+    
+}
+
+.btn-14 {
+    background-color: #004d40;
+}
+
+.btn-15 {
+    background-color: #8c9eff;
+    transition: background-color 1s;
+}
+.btn-15:hover {
+    animation: vibrate2 1s;
+    
+}
+
+@keyframes cambio-de-color {
+    0% { background-color: #ff8a65; }
+    33.333333% { background-color: white; }
+    66.66666% { background-color: #ff8a65; }
+    99.99999% { background-color: white; }
+}
+
+@keyframes saltar {
+    0%{transform: translateY(-20px);}
+    15%{transform: translateY(0px);}
+    30%{transform: translateY(-15px);}
+    45%{transform: translateY(0px);}
+    60%{transform: translateY(-10px);}
+    75%{transform: translateY(0px);}
+    90%{transform: translateY(-5px);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes elastic {
+    15%{transform: scaleY(1);}
+    30%{transform: scaleY(1.4);}
+    45%{transform: scaleY(1);}
+    60%{transform: scaleY(1.4);}
+    75%{transform: scaleY(1);}
+    90%{transform: scaleY(1.4);}
+    100%{transform: scaleY(1);}
+}
+
+@keyframes zoom {
+    0%{transform: scale(1.2);}
+    20%{transform: scale(1);}
+    40%{transform: scale(1.2);}
+    60%{transform: scale(1);}
+    80%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+@keyframes roll {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(200px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes vibrate {
+    0%{transform: translateX(10px);}
+    20%{transform: translateX(-10px);}
+    40%{transform: translateX(10px);}
+    60%{transform: translateX(-10px);}
+    80%{transform: translateX(10px);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes vibrate2 {
+    0%{transform: translateY(0) translateX(0);}
+    20%{transform: translateY(-15px) translateX(-10px);}
+    40%{transform: translateY(15px) translateX(10px);}
+    60%{transform: translateY(-15px) translateX(-10px);}
+    80%{transform: translateY(15px) translateX(10px);}
+    100%{transform: translateY(0) translateX(0px);}
+}
